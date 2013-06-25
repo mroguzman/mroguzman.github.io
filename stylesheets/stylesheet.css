@@ -97,6 +97,7 @@ header h2 {
 }
 
 #container .inner img {
+  margin-right: 50%;
   max-width: 100%;
 }
 
