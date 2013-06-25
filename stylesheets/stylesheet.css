@@ -58,7 +58,9 @@ body {
 
 a {
   color: #d5000d;
+  margin-right: 20px
 }
+
 a:hover {
   color: #c5000c;
 }
