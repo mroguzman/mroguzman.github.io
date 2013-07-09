@@ -3,10 +3,14 @@
 }
 
 #main_content img {
-  margin-top: 25px;
   margin-bottom: 25px;
 }
 
 #main_content h2 {
   margin-bottom: 30px;
+}
+
+#menu a {
+  font-size: 21px;
+  font-style: italic;
 }
