@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../stylesheets/estilo_personalizado.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../stylesheets/print.css" media="print" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>mroguzman.github.io by mroguzman</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Rocío Guzmán</h1>
+          <h2>Blog Personal</h2>
+        </header>
+
+        <div id="menu">
+          <a href="/about.html">About</a>
+          <a href="/blog.html">Blog</a>
+          <a href="/proyectos.html">Proyectos</a> 
+        </div>
+        <hr>
+
+        <div id="articulo">
+          <h3>Instalación de Ruby on Rails en Ubuntu 12.04 con RVM.</h3>
+            <p>(11 Julio 2013)</p>
+          <ol>
+            <li>Instalar Ruby con RVM.</li>
+              <p>Aseguramos que todos los paquetes están actualizados para ello ejecutamos el siguiente comando:</p>
+              <div id="codigo">
+                <p>$ sudo apt-get update</p>
+              </div>
+              <p>Una vez realizado la actualización procedemos a la instalación de RVM. Si no tienes instalado curl(herramienta para transferir archivos) procedemos a la instalación.</p>
+              <div id="codigo">
+                <p>$ sudo apt-get install curl</p>
+              </div>
+              <p>Una vez instalado curl, instalamos RVM.</p>
+              <div id="codigo">
+                <p>$ \curl -L https://get.rvm.io | bash -s stable</p>
+              </div>
+              <p>Una vez instalado cerramos la sesión en el terminal y creamos una nueva y procedemos a cargar de nuevo RVM.</p>
+              <div id="codigo">
+                <p>$ source ~/.rvm/scripts/rvm</p>
+                <p>$ echo "source \$HOME/.rvm/scripts/rvm" >> ~/.bashrc</p>
+              </div>
+              <p>RVM tiene algunas dependencias que necesitan ser instaladas, para verlas necesitamos ejecutar el siguiente comando:</p>
+              <div id="codigo">
+                <p>$ rvm requirements</p>
+              </div>
+              <p>A continuación nos aparecerá las siguientes dependencias:</p>
+              <div id="cuadro_texto">
+                <p>apt-get --no-install-recommends install build-essential openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev libgdbm-dev ncurses-dev automake libtool bison subversion pkg-config libffi-dev</p>
+              </div>
+              <p>Por lo que ejecutaremos la instrucción.</p>
+              <div id="codigo">
+                <p>$ sudo apt-get --no-install-recommends install build-essential openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev libgdbm-dev ncurses-dev automake libtool bison subversion pkg-config libffi-dev</p>
+              </div>
+            <li>Instalar Ruby.</li> 
+              <p>Instalamos ruby con RVM.</p>
+              <div id="codigo">
+                <p>$ rvm install 1.9.3</p>
+              </div>
+              <p>Ahora le decimos al sistema que utilice ruby 1.9.3 por defecto.</p>
+              <div id="codigo">
+                <p>$ rvm use 1.9.3 --default</p>
+              </div>
+            <li>Instalar RubyGems.</li>
+              <p>Para instalar RubyGems utilizamos también Rvm.</p>
+              <div id="codigo">
+                <p>$ rvm rubygems currents</p>
+              </div>
+            <li>Instalar Rails.</li>
+              <div id="codigo">
+                <p>$ gem install rails</p>
+              </div>
+              <p>Este proceso suele tardar un poco pero una vez finalizado ya tienes instalado Ruby on Rails en tu máquina.</p>
+          </ol>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>

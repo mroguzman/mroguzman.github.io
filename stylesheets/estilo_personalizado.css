@@ -39,3 +39,33 @@
 	color: #303030;
 	font-style: italic;
 }
+
+#articulo h3 {
+	font-size: 28px;
+	color: #303030;
+	font-style: italic;
+	font-weight: normal;
+}
+
+#articulo li {
+	font-size: 22px;
+	color: #303030;
+	margin-bottom: 20px;
+}
+
+#articulo p {
+	font-size: 20px;
+}
+
+#codigo p {
+	font-size: 17px;
+	font-style: italic;
+}
+
+#cuadro_texto p {
+	font-size: 16px;
+	font-style: italic;
+	background-color: #696969;
+	color: #FFFFFF;
+	padding: 10px;
+}
